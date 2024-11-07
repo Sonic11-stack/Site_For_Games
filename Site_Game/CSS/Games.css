@@ -1,0 +1,18 @@
+.container {
+    text-align: center; 
+}
+
+.inline-text {
+    display: inline;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.Games .col-xl-4 {
+    background-color: rgb(179, 175, 175);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px; 
+    padding: 20px; 
+  }
+  
