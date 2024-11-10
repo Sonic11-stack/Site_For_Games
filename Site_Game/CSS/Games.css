@@ -23,3 +23,7 @@
 .zoom-img:hover {
     transform: scale(1.06); 
 }
+
+.Main_Picture {
+    position: absolute;
+}

@@ -18,7 +18,7 @@
 <body>
 
     <section class = "Background">
-        <!-- <img src = "../Images/Wall_For_Site.png"> -->
+       <!-- <img src = "../Images/Wall_For_Site.png" class = "Main_Picture"> -->
     </section>
 
   <header>
@@ -33,7 +33,7 @@
   <section class = "Games">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4" onclick="redirectToTheLastOfUs()"> 
           <div class="text-center animate__animated">
           <img src="../Images/The_Last_Of_Us.png" class="zoom-img" style = " border-radius: 40px; 
           margin: 20px auto; 
@@ -428,6 +428,21 @@
             window.location.href = '../HTML/News.html';
         }
 
+        function redirectToTheLastOfUs() {
+            
+            window.location.href = '../HTML/The Last Of Us.html';
+        }
+
+        function redirectToFirstPage() {
+            
+            window.location.href = '../HTML/First_Page.html';
+        }
+
+        function redirectToSecondPage() {
+            
+            window.location.href = '../HTML/Second_Page.html';
+        }
+
         function redirectToGames() {
             
             window.location.href = '../HTML/Games.html';
@@ -454,8 +469,8 @@
 
       <footer> 
         <div class = "container">
-          <span class="inline-text" onclick="redirectToNews()">1</span>
-          <span class="inline-text" onclick="redirectToGames()">2</span>
+          <span class="inline-text" onclick="redirectToFirstPage()">1</span>
+          <span class="inline-text" onclick="redirectToSecondPage()">2</span>
           <span class="inline-text" onclick="redirectToGameEngines()">3</span>
           <span class="inline-text" onclick="redirectToGameEngines()">4</span>
           <span class="inline-text" onclick="redirectToGameEngines()">5</span>
