@@ -19,412 +19,200 @@
     </section>
 
   <header>
-    <div class = "container">
-        <span class="inline-text" onclick="redirectToNews()">Новости</span>
-        <span class="inline-text" onclick="redirectToGames()">Игры</span>
-        <span class="inline-text" onclick="redirectToGameEngines()">Игровые движки</span>
-    </div>
+    <nav aria-label="Menu">
+      <ul>
+        <li class="inline-text"><a href="../HTML/News.html">Новости</a></li>
+        <li class="inline-text"><a href="../HTML/Games.html">Игры</a></li>
+        <li class="inline-text"><a href="../HTML/Game_Engines.html">Игровые движки</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="Games">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4" onclick="redirectToTheLastOfUs()"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Doom.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Doom.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Doom Eternal</div>
         </div>
+
+        <div class="game-card"> 
+          <img src="../Images/Metal_Gear_Rising.jpeg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Metal Gear Rising : Revengeance</div>
         </div>
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Metal_Gear_Rising.jpeg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Metal Gear Rising : Revengeance</div>
-          </div>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Death_Stranding.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Death Stranding</div>
-          </div>
-          </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Death_Stranding.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Death Stranding</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Garrys_Mod.jpeg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Garrys_Mod.jpeg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Garry’s Mod</div>
         </div>
+
+        <div class="game-card"> 
+          <img src="../Images/Dont_Starve.jpeg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Don’t Starve</div>
         </div>
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Dont_Starve.jpeg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Don’t Starve</div>
-          </div>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Hearthstone.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Hearthstone</div>
-          </div>
-          </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Hearthstone.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Hearthstone</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/MTG.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/MTG.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Magic : The Gathering</div>
         </div>
+
+        <div class="game-card"> 
+          <img src="../Images/Detroit.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Detroit : Become Human</div>
         </div>
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Detroit.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Detroit : Become Human</div>
-          </div>
-          </div>
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Need_For_Speed.jpeg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Need For Speed</div>
-          </div>
-          </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Need_For_Speed.jpeg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Need For Speed</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/pubg.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/pubg.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">PUBG</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Apex_Legends.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Apex Legends</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Fortnite.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Fortnite</div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/Apex_Legends.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Apex Legends</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Fortnite.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Fortnite</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Isaac.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Isaac.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">The Binding of Isaac</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Undertale.png" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Undertale</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/SackBoy.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Sackbo: A Big Adventure </div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/Undertale.png" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Undertale</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/SackBoy.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Sackboy: A Big Adventure </div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Hollow_Night.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Hollow_Night.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Hollow Night</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/FNAF.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Five Nights at Freddy's</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Wolfenstein.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Wolfenstein</div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/FNAF.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Five Nights at Freddy's</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Wolfenstein.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Wolfenstein</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Wolfenstein_2.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Wolfenstein_2.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Wolfenstein 2</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Silent_Hill.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Silent Hill</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Silent_Hill_2.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Silent Hill 2</div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/Silent_Hill.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Silent Hill</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Silent_Hill_2.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Silent Hill 2</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Middle_Earth.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Middle_Earth.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Middle-earth: Shadow of Mordor</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Middle_Earth_2.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Middle-earth: Shadow of War</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/For_Honor.jpeg " class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">For Honor</div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/Middle_Earth_2.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Middle-earth: Shadow of War</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/For_Honor.jpeg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">For Honor</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Ghost.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Ghost.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">Ghost of Tsushima</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Way_Out.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">A Way Out</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Until_Dawn.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Until Dawn</div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/Way_Out.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">A Way Out</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Until_Dawn.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">Until Dawn</div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-          <div class="text-center animate__animated">
-          <img src="../Images/Quarry.jpg" class="zoom-img" style = " border-radius: 40px; 
-          margin: 20px auto; 
-          max-width: 100%;
-          background-size: cover; 
-          background-position: center;
-          cursor: pointer;">
+      <div class="grid-container">
+        <div class="game-card" onclick="redirectToTheLastOfUs()"> 
+          <img src="../Images/Quarry.jpg" class="zoom-img" alt="Metro 2033">
           <div class = "Text">The Quarry</div>
         </div>
-        </div>
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Rust.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">Rust</div>
-          </div>
-          </div>
-          
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4"> 
-            <div class="text-center animate__animated">
-            <img src="../Images/Nier.jpg" class="zoom-img" style = " border-radius: 40px; 
-            margin: 20px auto; 
-            max-width: 100%;
-            background-size: cover; 
-            background-position: center;
-            cursor: pointer;">
-            <div class = "Text">NieR: Automata</div>
-          </div>
-          </div>
+        <div class="game-card"> 
+          <img src="../Images/Rust.jpg" class="zoom-img" alt="Metro: Last Light">
+          <div class = "Text">Rust</div>
+        </div>
+  
+        <div class="game-card"> 
+          <img src="../Images/Nier.jpg" class="zoom-img" alt="Metro Exodus">
+          <div class = "Text">NieR: Automata</div>
+        </div>
       </div>
     </div>
   </section>
-  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-      </script>
 
       <footer> 
-        <div class = "container">
-          <span class="inline-text" onclick="redirectToFirstPage()">1</span>
-          <span class="inline-text" onclick="redirectToSecondPage()">2</span>
-          <span class="inline-text" onclick="redirectToThirdPage()">3</span>
-          <span class="inline-text" onclick="redirectToGameEngines()">4</span>
-          <span class="inline-text" onclick="redirectToGameEngines()">5</span>
-          <span class="inline-text" onclick="redirectToGameEngines()">6</span>
-          <span class="inline-text" onclick="redirectToGameEngines()">7</span>
-          <span class="inline-text" onclick="redirectToGameEngines()">8</span>
-          <span class="inline-text" onclick="redirectToGameEngines()">...</span>
-      </div>
+        <nav aria-label="Pages">
+          <ul>
+            <li class="inline-text"><a href="../HTML/First_Page.html">1</a></li>
+            <li class="inline-text"><a href="../HTML/Second_Page.html">2</a></li>
+            <li class="inline-text"><a href="../HTML/Third_Page.html">3</a></li>
+            <li class="inline-text"><a href="../HTML/Third_Page.html">4</a></li>
+            <li class="inline-text"><a href="../HTML/Third_Page.html">5</a></li>
+            <li class="inline-text"><a href="../HTML/Third_Page.html">6</a></li>
+          </ul>
+        </nav>
       </footer>
   </body>
 </html>
