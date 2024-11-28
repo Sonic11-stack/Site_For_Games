@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Игры</title>
+  <title>The Last of Us</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,35 +14,42 @@
 </head>
 <body>
 
-    <section class = "Background">
+    <section class="Background">
        <!-- <img src = "../Images/Wall_For_Site.png" class = "Main_Picture"> -->
     </section>
 
   <header>
-    <div class = "container">
-        <span class="inline-text" onclick="redirectToNews()">Новости</span>
-        <span class="inline-text" onclick="redirectToGames()">Игры</span>
-        <span class="inline-text" onclick="redirectToGameEngines()">Игровые движки</span>
+    <nav aria-label="Menu">
+      <ul>
+        <li class="inline-text"><a href="../HTML/News.html">Новости</a></li>
+        <li class="inline-text"><a href="../HTML/First_Page.html">Игры</a></li>
+        <li class="inline-text"><a href="../HTML/Game_Engines.html">Игровые движки</a></li>
+      </ul>
+    </nav>
+    <div class="auth-links">
+      <a href="#login" class="auth-link">Вход</a>
+      <span>|</span>
+      <a href="#register" class="auth-link">Регистрация</a>
     </div>
+    
   </header>
 
   <section class="Games">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mx-auto"> 
-          <div class="text-center animate__animated">
-            <img src="../Images/The_Last_Of_Us.png" class="zoom-img" style="border-radius: 40px; margin: 20px auto; max-width: 100%; background-size: cover;">
-            
-          </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="../Images/The_Last_Of_Us.png" class="zoom-img">
         </div>
       </div>
     </div>
-    
-    <div class = "container">
-      <span class="inline-text">Приключения</span>
-      <span class="inline-text">Экшен</span>
-      <span class="inline-text">Стелс</span>
-  </div>
+
+    <nav aria-label="Menu">
+      <ul>
+        <li class="inline-text"><a href="../HTML/News.html">Приключения</a></li>
+        <li class="inline-text"><a href="../HTML/Games.html">Экшен</a></li>
+        <li class="inline-text"><a href="../HTML/Game_Engines.html">Стелс</a></li>
+      </ul>
+    </nav>
   </section>
 
   <section class="Description_Of_The_Game">
@@ -64,68 +71,77 @@
   </section>
 
   <section class="Score">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto"> 
-          <div class="text-center animate__animated">
-           <div class = "Text_1">
-            Оценка метакритики : metacritic
-           </div>
-          </div>
+    <div class="container grid-container">
+      <div class="grid-item text-center">
+        <div class="Text_1" id="metacritic-score">
+          Оценка метакритики: <span id="score-placeholder">Загрузка...</span>
         </div>
       </div>
     </div>
   </section>
 
+<!--  <script>
+    const API_KEY = '82e701bc8b704d03be3d42a8183eb6ae'; // Вставьте ваш API-ключ RAWG
+const GAME_NAME = 'The Last of Us'; // Название игры
+
+async function fetchMetacriticScore(gameName) {
+  try {
+    const response = await fetch(`https://api.rawg.io/api/games?search=${encodeURIComponent(gameName)}&key=${API_KEY}`);
+    const data = await response.json();
+
+    if (data.results && data.results.length > 0) {
+      const game = data.results[0];
+      document.getElementById('score-placeholder').textContent = game.metacritic || 'Нет данных';
+    } else {
+      document.getElementById('score-placeholder').textContent = 'Игра не найдена';
+    }
+  } catch (error) {
+    console.error('Ошибка при получении данных:', error);
+    document.getElementById('score-placeholder').textContent = 'Ошибка загрузки';
+  }
+}
+
+fetchMetacriticScore(GAME_NAME);
+
+  </script> -->
+  
   <section class="Buy_Game">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto"> 
-          <div class="text-center animate__animated">
-           <div class = "Text_1" style = "cursor: pointer;" onclick="redirectToGame()">
-            Купить игру
-           </div>
-          </div>
+    <div class="container grid-container">
+      <div class="grid-item text-center">
+        <div class="Text_1" style="cursor: pointer;" onclick="redirectToGame()">
+          Купить игру
         </div>
       </div>
     </div>
   </section>
-
+  
   <section class="Comments">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto"> 
-          <div class="text-center animate__animated">
-           <div class = "Text_1">
-            Здесь вы можете почитать комментарии или оставить свой
-           </div>
-          </div>
+    <div class="container grid-container">
+      <div class="grid-item text-center">
+        <div class="Text_1">
+          Здесь вы можете почитать комментарии или оставить свой
         </div>
       </div>
     </div>
   </section>
-
+  
   <section class="Create_Comment">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 mx-auto"> 
-                <div class="text-center animate__animated">
-                    <div class="Text_1" id="add-comment-btn" style="cursor: pointer;">
-                        Оставить комментарий
-                    </div>
-                    <div id="comment-field" style="display: none; margin-top: 10px;">
-                        <textarea id="comment-text" placeholder="Введите ваш комментарий..." 
-                                  style="width: 100%; height: 100px; padding: 10px; font-size: 16px;"></textarea>
-                        <button id="submit-comment-btn" style="margin-top: 10px;">Отправить</button>
-                    </div>
-                    <div id="comments-list" style="margin-top: 20px; text-align: left;">
-                        <h3>Комментарии:</h3>
-                    </div>
-                </div>
-            </div>
+    <div class="container grid-container">
+      <div class="grid-item text-center">
+        <div class="Text_2" id="add-comment-btn" style="cursor: pointer;">
+          Оставить комментарий
         </div>
+        <div id="comment-field" style="display: none; margin-top: 10px;">
+          <textarea id="comment-text" placeholder="Введите ваш комментарий..." 
+                    style="width: 100%; height: 100px; padding: 10px; font-size: 16px;"></textarea>
+          <button id="submit-comment-btn" style="margin-top: 10px;">Отправить</button>
+        </div>
+        <div id="comments-list" style="margin-top: 20px; text-align: left;">
+          <h3>Комментарии:</h3>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 <script>
     const addCommentBtn = document.getElementById('add-comment-btn');
@@ -155,8 +171,9 @@
     });
 </script>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-      </script>
+<script>
+  
+</script>
 
       <footer> 
       </footer>
