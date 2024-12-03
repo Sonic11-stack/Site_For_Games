@@ -27,7 +27,7 @@ nav {
     padding: 20px;
     margin: 0 auto;          
     display: block;
-    width: 700px;          
+    width: 100%;          
   }
 
   .auth-links{
@@ -113,4 +113,40 @@ nav {
   }
 
   
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .inline-text a {
+    text-decoration: none;
+    color: #000; /* Задайте нужный цвет */
+  }
+  
+  .auth-links {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между элементами "Вход" и "Регистрация" */
+  }
+  
+  .auth-link {
+    text-decoration: none;
+    color: #000; /* Задайте нужный цвет */
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline; /* Эффект при наведении */
+  }
+
   
