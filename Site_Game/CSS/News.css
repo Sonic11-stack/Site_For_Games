@@ -1,10 +1,146 @@
-.container {
-    text-align: center; 
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; 
+    margin: 40px auto;  
+  }
+
+  .game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .game-card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 20%;
+    width: 60%; 
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+  
+  .text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .game-card-text {
+    width: 100%;
+    margin-left: -22%;
+  }
+  
+
+  .Text {
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+
+  .separator {
+    width: 5%;
+    height: 100%; 
+    background-color: #ccc;
+  }
+
+  
+
+  .zoom-img {
+    border-right: 8px solid #ccc;
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+.Main_Picture {
+    position: absolute;
+}
+
+
+nav {
+  background-color: #707BF7;
+  height: 100px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto;          
+  display: block;
+  width: 700px;          
 }
 
 .inline-text {
-    display: inline;
-    margin: 0 30px;
-    cursor: pointer;
+  display: inline-block;   
+  margin: 0 40px;          
+}
+
+.inline-image {
+  display: inline-block;   
+  margin: 0 10px;        
+  vertical-align: left;  
+}
+
+.inline-text a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.Icons {
+    margin-left: -100px;
+}
+
+nav[aria-label="Icons"] {
+    position: sticky;
+    text-align: right; 
+    right: 350px;
+  }
+
+  footer {
+    background-color: #707BF7;
+  }
+
+.Games {
+  background-color: grey;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.Background {
+  position: fixed; 
+  width: 100%; 
+  height: 100vh; 
+  background-image: url('../Images/Wall_For_Site.png'); 
+  background-size: cover; 
+  background-position: center; 
+  z-index: -1; 
+}
+
+html, body {
+  margin: 0; 
+  padding: 0;
+  height: 100%; 
 }
 

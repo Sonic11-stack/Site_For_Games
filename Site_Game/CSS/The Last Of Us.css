@@ -42,6 +42,7 @@ nav {
     margin: 0 40px;          
   }
   
+  
   .inline-text a {
     text-decoration: none;
     color: #000;
@@ -121,8 +122,8 @@ nav {
     padding: 10px;
   }
   
-  .menu {
-    display: flex;
+  .Menu {
+    display: inline-block;
     gap: 20px; /* Расстояние между пунктами меню */
     list-style: none;
     margin: 0;
@@ -135,14 +136,16 @@ nav {
   }
   
   .auth-links {
-    display: flex;
+    display: inline-block;
     align-items: center;
-    gap: 10px; /* Расстояние между элементами "Вход" и "Регистрация" */
+    gap: 30px; 
+    margin-right: -100px;
   }
   
   .auth-link {
     text-decoration: none;
-    color: #000; /* Задайте нужный цвет */
+    color: #000; 
+    
   }
   
   .auth-link:hover {
