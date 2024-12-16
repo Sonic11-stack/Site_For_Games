@@ -1,9 +1,9 @@
-  .Games .col-xl-4 {
-    background-color: rgb(179, 175, 175);
-    background-size: cover;
-    background-position: center;
-    border-radius: 0px; 
-    padding: 20px; 
+  .Games  {
+    background-color: grey;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 40px;
+    z-index: 1;
   }
   
   .Main_Picture {
@@ -16,11 +16,14 @@
   }
 
   nav {
-    background-color: #f5f5f5;
+    background-color: #707BF7;
     height: 100px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    
   }
-  
+
   ul {
     list-style: none;
     padding: 20px;
@@ -31,8 +34,7 @@
 
   .auth-links{
     display : flex;
-    color : red;
-    padding-right : 30%;
+    color : black;
     bottom : 10%;
   }
   
@@ -40,7 +42,6 @@
     display: inline-block;   
     margin: 0 40px;          
   }
-  
   
   .inline-text a {
     text-decoration: none;
@@ -112,9 +113,8 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  
-  
   header {
+    background-color: #707BF7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,6 +128,10 @@
     margin: 0;
     padding: 0;
   }
+
+  .inline-text {
+    margin-right: 15px;
+  }
   
   .inline-text a {
     text-decoration: none;
@@ -135,18 +139,59 @@
   }
   
   .auth-links {
-    display: inline-block;
-    align-items: center;
-    gap: 30px; 
-    margin-right: -100px;
+    position: flex;
+    overflow: visible;
+    gap: 10px;
+    margin-left: 90%;
+    margin-top: -128px;
+  }
+
+  .Line {
+    display: grid; 
+    align-items: center; 
   }
   
   .auth-link {
+    font-size: 18px;
     text-decoration: none;
     color: #000; 
-    
+    font-weight: bold;
   }
   
   .auth-link:hover {
     text-decoration: underline; 
+  }
+
+  .Background {
+    position: fixed; 
+    width: 100%; 
+    height: 100vh; 
+    background-image: url('../Images/Wall_For_Site.png'); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1; 
+  }
+
+  .inline-text {
+    display: inline-block;   
+    margin: 0 40px;          
+  }
+
+  .inline-text a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .inline-image {
+    display: inline-block;   
+    margin: 0 10px;        
+    vertical-align: left;  
+  }
+
+  html, body {
+    margin: 0; 
+    padding: 0;
+    height: 100%; 
   }

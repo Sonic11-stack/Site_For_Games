@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Новости игровой индустрии, игры"/>
-  <link rel = "stylesheet" type = "text/css" href = "../CSS/The Last Of Us.css">
+  <link rel = "stylesheet" type = "text/css" href = "../CSS/Design_For_Game.css">
   <script src="../JavaScript/List_Of_Commands.js" defer></script>
+  <script src="../JavaScript/Get_API_From_Metacritic.js" defer></script>
   <link type="image/x-icon" href="../Logo/Group 2.ico" rel="shortcut icon">
   <link type="Image/x-icon" href="../Logo/Group 2.ico" rel="icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +16,7 @@
 <body>
 
     <section class="Background">
-    </section>
+    </section> 
 
   <header>
     <section class = "Line">
@@ -26,11 +27,11 @@
         <li class="inline-text"><a href="../HTML/Game_Engines.html">Игровые движки</a></li>
       </ul>
     </nav>
-    
     <div class="auth-links">
-      <a href="#login" class="auth-link">Вход</a>
+      <a href="#login" class="auth-link">Вход</a> /
       <a href="#register" class="auth-link">Регистрация</a>
     </div>
+    
     </section>
   </header>
 
@@ -45,12 +46,11 @@
 
     <nav aria-label="Menu">
       <ul>
-        <li class="inline-text"><a href="../HTML/News.html">Приключения</a></li>
-        <li class="inline-text"><a href="../HTML/Games.html">Экшен</a></li>
-        <li class="inline-text"><a href="../HTML/Game_Engines.html">Стелс</a></li>
+        <li class="inline-text">Приключения</li>
+        <li class="inline-text">Экшен</li>
+        <li class="inline-text">Стелс</li>
       </ul>
     </nav>
-  </section>
 
   <section class="Description_Of_The_Game">
     <div class="container">
@@ -77,31 +77,6 @@
       </div>
     </div>
   </section>
-
-<!--  <script>
-    const API_KEY = '82e701bc8b704d03be3d42a8183eb6ae'; // Вставьте ваш API-ключ RAWG
-const GAME_NAME = 'The Last of Us'; // Название игры
-
-async function fetchMetacriticScore(gameName) {
-  try {
-    const response = await fetch(`https://api.rawg.io/api/games?search=${encodeURIComponent(gameName)}&key=${API_KEY}`);
-    const data = await response.json();
-
-    if (data.results && data.results.length > 0) {
-      const game = data.results[0];
-      document.getElementById('score-placeholder').textContent = game.metacritic || 'Нет данных';
-    } else {
-      document.getElementById('score-placeholder').textContent = 'Игра не найдена';
-    }
-  } catch (error) {
-    console.error('Ошибка при получении данных:', error);
-    document.getElementById('score-placeholder').textContent = 'Ошибка загрузки';
-  }
-}
-
-fetchMetacriticScore(GAME_NAME);
-
-  </script> -->
   
   <section class="Buy_Game">
     <div class="container grid-container">
@@ -141,37 +116,28 @@ fetchMetacriticScore(GAME_NAME);
       </div>
     </div>
   </section>
+</section>
 
-<script>
-    const addCommentBtn = document.getElementById('add-comment-btn');
-    const commentField = document.getElementById('comment-field');
-    const submitCommentBtn = document.getElementById('submit-comment-btn');
-    const commentsList = document.getElementById('comments-list');
-    const commentText = document.getElementById('comment-text');
+<footer> 
+  <nav aria-label="Pages">
+    <ul>
+      <li class="inline-text"><a href="../HTML/First_Page.html">1</a></li>
+      <li class="inline-text"><a href="../HTML/Second_Page.html">2</a></li>
+      <li class="inline-text"><a href="../HTML/Third_Page.html">3</a></li>
+      <li class="inline-text"><a href="../HTML/Fourth_Page.html">4</a></li>
+      <li class="inline-text"><a href="../HTML/Fifth_Page.html">5</a></li>
+      <li class="inline-text"><a href="../HTML/Sixth_Page.html">6</a></li>
+    </ul>
+  </nav>
 
-    addCommentBtn.addEventListener('click', () => {
-        commentField.style.display = 'block'; 
-    });
+  <nav aria-label="Icons">
+    <ul>
+      <li class="inline-image"> <a href="https://t.me/Fetyper"> <img src="../Icons/Telegram.png" alt="Image description"></a></li>
+      <li class="inline-image"> <a href="https://vk.com/coolstudent1"> <img src="../Icons/VK.png" alt="Image description"></a></li>
+      <li class="inline-image"> <a href="https://github.com/Sonic11-stack?tab=overview&from=2024-12-01&to=2024-12-08"> <img src="../Icons/GitHub.png" alt="Image description"></a></li>
+    </ul>
+  </nav>
+</footer>
 
-    submitCommentBtn.addEventListener('click', () => {
-        const text = commentText.value.trim();
-
-        if (text) {
-            const newComment = document.createElement('p');
-            newComment.textContent = text;
-            newComment.style.borderBottom = '1px solid #ccc'; 
-            newComment.style.padding = '10px 0';
-            commentsList.appendChild(newComment);
-            commentText.value = '';
-            commentField.style.display = 'none';
-        } else {
-            alert('Пожалуйста, введите текст комментария!');
-        }
-    });
-</script>
-
-      <footer> 
-      </footer>
-      
   </body>
 </html>
