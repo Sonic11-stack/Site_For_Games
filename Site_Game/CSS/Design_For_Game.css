@@ -21,7 +21,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    
   }
 
   ul {
@@ -33,14 +32,20 @@
   }
 
   .auth-links{
+    position: flex;
     display : flex;
+    overflow: visible;
     color : black;
     bottom : 10%;
+    gap: 10px;
+    margin-left: 90%;
+    margin-top: -128px;
   }
-  
+
   .inline-text {
     display: inline-block;   
-    margin: 0 40px;          
+    margin: 0 40px;  
+    margin-right: 15px;        
   }
   
   .inline-text a {
@@ -112,14 +117,6 @@
     background-size: cover;
     transition: transform 0.3s ease-in-out;
   }
-
-  header {
-    background-color: #707BF7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
   
   .Menu {
     display: inline-block;
@@ -127,23 +124,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-  .inline-text {
-    margin-right: 15px;
-  }
-  
-  .inline-text a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .auth-links {
-    position: flex;
-    overflow: visible;
-    gap: 10px;
-    margin-left: 90%;
-    margin-top: -128px;
   }
 
   .Line {
@@ -172,26 +152,27 @@
     z-index: -1; 
   }
 
-  .inline-text {
-    display: inline-block;   
-    margin: 0 40px;          
-  }
-
-  .inline-text a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
   .inline-image {
     display: inline-block;   
     margin: 0 10px;        
     vertical-align: left;  
   }
 
+  header {
+    background-color: #707BF7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom : 5%;
+  }
+
   html, body {
     margin: 0; 
     padding: 0;
     height: 100%; 
+  }
+
+  footer {
+    margin-top : 5%;
   }
