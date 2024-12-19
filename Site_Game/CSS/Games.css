@@ -62,9 +62,7 @@
   nav {
     background-color: #707BF7;
     height: 100px;
-    display: flex;
     text-align: center;
-    justify-content: center;
   }
   
   ul {
@@ -147,6 +145,7 @@
 
   footer {
     margin-top : 5%;
+    background-color: #707BF7;
   }
 
   header {
@@ -164,6 +163,27 @@
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+
+  .Information_Year {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .Information_Contact {
+    margin-bottom: 1%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .Information_Follow {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  nav[aria-label="Icons"] {
+    display: grid;
+    position: sticky;
   }
 
   

@@ -175,4 +175,21 @@
 
   footer {
     margin-top : 5%;
+    background-color: #707BF7;
+  }
+
+  .Information_Year {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .Information_Contact {
+    margin-bottom: 1%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .Information_Follow {
+    text-align: center;
+    font-weight: bold;
   }
