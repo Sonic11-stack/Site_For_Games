@@ -16,8 +16,15 @@
   }
 
   nav {
-    background-color: #707BF7;
     height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  nav[aria-label="Menu_1"] {
+    background-color: white;
+    height: 50px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -119,6 +126,14 @@
   }
   
   .Menu {
+    display: inline-block;
+    gap: 20px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Menu_1 {
     display: inline-block;
     gap: 20px; 
     list-style: none;
