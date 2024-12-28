@@ -730,6 +730,18 @@
             window.location.href='../HTML/Games.html';
         }
 
+        function redirectToUnity() {
+            window.location.href='../HTML/Unity.html';
+        }
+
+        function redirectToUnrealEngine() {
+            window.location.href='../HTML/Games.html';
+        }
+
+        function redirectToGodot() {
+            window.location.href='../HTML/Games.html';
+        }
+
         function redirectToGameEngines() {
             window.location.href='../HTML/Game_Engines.html';
         }
